@@ -1,0 +1,232 @@
+
+@media screen and (max-width: 1170px){
+
+    .box-left{
+        width: 80%;
+        min-width: 350px;
+        height: 100%;
+        font-family: 'Montserrat', sans-serif;
+        flex: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+    }
+
+    .box-right{
+        min-width: 350px;
+        height: 100%;
+        flex: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: auto;
+    }
+
+    .key {
+        width: 1%;
+        min-width: 10px;
+    }
+
+    hr{
+        display: block;
+        width: 80%;
+        size: 0.5px;
+        color: rgb(78, 78, 78);
+    }
+
+    .bar-link{
+
+        padding-bottom: 100px;
+    }
+
+    .area-1{
+        width: 100%;
+        height: 70%;
+        color: rgb(78, 78, 78);
+        font-size: 1.8rem;
+        border-left: none;
+        border-right: none;
+        display: flex;
+        align-items:  center;
+        justify-content: center;
+    }
+
+    .area-1> p{
+        width: 100%;
+        text-align: right;
+    }
+
+    .name-box_C{
+        border-top: 2px solid #F9B233;
+        width: 80%;
+        height: 300px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.5rem;
+    }
+    
+    .area-2{
+        height: 80px;
+        border-bottom: 2px solid #F9B233;
+        justify-content: left;
+        padding-left: 50px;
+        flex: 100%;
+    }
+    
+    .area-3{
+        height: 80px;
+        border-bottom: 2px solid #F9B233;
+        border-left: none;
+        border-right: 2px solid #F9B233;
+        flex: 100%;
+        padding-right: 50px;
+        justify-content: right;
+    }
+    
+    .area-4{
+        height: 80px;
+        border-bottom: 2px solid #F9B233;
+        flex: 100%;
+        padding-left: 50px;
+        justify-content: left;
+    }
+    
+    .area-5{
+        height: 80px;
+        border-bottom: 2px solid #F9B233;
+        border-left: none;
+        border-right: 2px solid #F9B233;
+        padding-right: 50px;
+        flex: 100%;
+        justify-content: right;
+    }
+    
+    .spacer{
+        display: block;
+        flex: 100%;
+        height: 100px;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+    .zz{
+        font-size: 1.2rem;
+    }
+
+    .zzz{
+        font-size: 1.8rem;
+    }
+
+
+    .name-box_A > p {
+        width: 75%;
+        color: rgb(78, 78, 78);
+        font-size: 1.2rem;
+        display: flex;
+        text-align: center;
+    }
+
+    .box-right{
+        min-width: 350px;
+        height: 100%;
+        flex: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: auto;
+    }
+
+    .key {
+        width: 1%;
+    }
+
+    .area-1> p{
+        font-size: 1.7rem;
+    }
+
+    .area-2{
+        height: 60px;
+        font-size: 1.6rem;
+        padding-left: 30px;
+    }
+    
+    .area-3{
+        height: 60px;
+        font-size: 1.6rem;
+        padding-right: 30px;
+    }
+    
+    .area-4{
+        height: 60px;
+        font-size: 1.6rem;
+        padding-left: 30px;
+    }
+    
+    .area-5{
+        height: 60px;
+        font-size: 1.6rem;
+        padding-right: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 520px){
+    .zz{
+        font-size: 1rem;
+    }
+
+    .zzz{
+        font-size: 1.5rem;
+    }
+
+
+    .name-box_A > p {
+        width: 75%;
+        color: rgb(78, 78, 78);
+        font-size: 1rem;
+        display: flex;
+        text-align: center;
+    }
+
+    .box-right{
+        min-width: 350px;
+        height: 100%;
+        flex: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: auto;
+    }
+
+    .key {
+        width: 1%;
+    }
+
+    .area-1> p{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .area-2{
+        font-size: 1.3rem;
+    }
+    
+    .area-3{
+        font-size: 1.3rem;
+    }
+    
+    .area-4{
+        font-size: 1.3rem;
+    }
+    
+    .area-5{
+        font-size: 1.3rem;
+    }
+    
+}

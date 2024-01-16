@@ -1,0 +1,215 @@
+.box-home{
+    position: absolute;
+    width: 100%;
+    height: 84.2%;
+    font-size: 2em;
+}
+
+.main-box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.box-left{
+    width: 65%;
+    min-width: 350px;
+    min-width: 350px;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    flex: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+hr{
+    display: none;
+
+}
+.name-box{
+    width: 100%;
+    height: 33.3%;
+    font-family: 'Montserrat', sans-serif;    
+}
+
+.bbb{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.zz{
+    width: 35%;
+    height: 100%;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    font-size: 1.5rem;
+}
+
+.zz_text{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: rgb(78, 78, 78);    
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.zzz{
+    position: relative;
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    font-size: 50px;
+}
+
+.zzz_text{
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    color: rgb(163, 25, 91);
+    border-left: 1px solid rgb(104, 104, 104);
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.mid-border{
+    position: absolute;
+    border-bottom: 0.1px solid rgb(78, 78, 78);
+    border-top: 0.1px solid rgb(78, 78, 78) 50%;
+    right: 50%;
+}
+
+.box-right{
+    width: 30%;
+    min-width: 350px;
+    height: 100%;
+    flex: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.key {
+    width: 5%;
+}
+
+.name-box_A{
+    width: 80%;
+    height: 93%;
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-box_A> p{
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-size: 1.5rem;
+    display: flex;
+}
+
+.bar-link{
+    width: 100%;
+    height: 30%;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.name-box_B{
+    border-top: 0.5px solid rgb(78, 78, 78);
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.area-1{
+    width: 40%;
+    height: 70%;
+    text-align: center;
+    color: rgb(78, 78, 78);
+    font-size: 1.8rem;
+    border-left: 2px solid #F9B233;
+    border-right: 2px solid #F9B233;
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+}
+
+.name-box_C{
+    border-top: 2px solid #F9B233;
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.area-2{
+    height: 60px;
+    font-size: 2rem;
+    border-left: 2px solid #F9B233;
+    color: #0d8029;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 25%;
+}
+
+.area-3{
+    height: 60px;
+    font-size: 2rem;
+    border-left: 2px solid #F9B233;
+    color: #0d8029;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 15%;
+}
+
+.area-4{
+    height: 60px;
+    font-size: 2rem;
+    border-left: 2px solid #F9B233;
+    color: #0d8029;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 40%;
+}
+
+.area-5{
+    height: 60px;
+    font-size: 2rem;
+    border-left: 2px solid #F9B233;
+    border-right: 2px solid #F9B233;
+    color: #0d8029;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 20%;
+}
+
+
+.spacer{
+    display: none;
+}
