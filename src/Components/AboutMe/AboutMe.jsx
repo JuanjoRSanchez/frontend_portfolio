@@ -1,9 +1,12 @@
 import React from "react";
-
+import '../SharedStyles/CommonCss.css'
+import './aboutMe.css'
 
 function AboutMe(){
     return(
-        <div>dddddddddddddd</div>
+        <div className="main-box-about">
+            <div className="title">Some about me</div>
+        </div>
     )
 }
 

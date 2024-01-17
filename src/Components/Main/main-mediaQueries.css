@@ -32,8 +32,9 @@
     hr{
         display: block;
         width: 80%;
-        size: 0.5px;
-        color: rgb(78, 78, 78);
+        border-width: 0.2px;
+        border-color: rgb(78, 78, 78);
+        background-color: rgb(78, 78, 78);
     }
 
     .bar-link{
@@ -55,7 +56,7 @@
 
     .area-1> p{
         width: 100%;
-        text-align: right;
+        text-align: start;
     }
 
     .name-box_C{
@@ -121,7 +122,6 @@
         font-size: 1.8rem;
     }
 
-
     .name-box_A > p {
         width: 75%;
         color: rgb(78, 78, 78);
@@ -183,7 +183,6 @@
     .zzz{
         font-size: 1.5rem;
     }
-
 
     .name-box_A > p {
         width: 75%;

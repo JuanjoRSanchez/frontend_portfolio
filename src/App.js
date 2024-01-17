@@ -6,6 +6,8 @@ import Header from './Components/Header/Header.jsx'
 import Contact from './Components/Contact/Contact.jsx';
 import AboutMe from './Components/AboutMe/AboutMe.jsx';
 import Projects from './Components/Projects/Projects.jsx';
+import TechStack from './Components/TechStack/TechStack.jsx'
+import Experience from './Components/Experience/Experience.jsx'
 
 function App() {
   return (
@@ -14,36 +16,13 @@ function App() {
         <Routes>
           <Route path='/' element={<Main />}></Route>
           <Route path='/contact' element={<Contact />}></Route>
-          <Route path='/AboutMe' element={<AboutMe />}></Route>
+          <Route path='/aboutMe' element={<AboutMe />}></Route>
           <Route path='/projects' element={<Projects />}> </Route>
+          <Route path='/techstackEducation' element={<TechStack />}> </Route>
+          <Route path='/experience' element={<Experience />}> </Route>
         </Routes>
       </BrowserRouter>
   );
 }
 
 export default App;
-/*
-
-    <div className="App App-header">
-      <Main/>
-    </div>
-
-*/
-/*
- <div className="App">
-  <header className="App-header">
-    <img src={logo} className="App-logo" alt="logo" />
-    <p>
-      Edit <code>src/App.js</code> and save to reload.
-    </p>
-    <a
-      className="App-link"
-      href="https://reactjs.org"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Learn React
-    </a>
-  </header>
-</div>
-*/

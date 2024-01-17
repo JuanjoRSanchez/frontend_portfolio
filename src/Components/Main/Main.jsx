@@ -1,6 +1,7 @@
 import "./main.css"
 import "./main-mediaQueries.css"
 import React from 'react';
+import { Link } from "react-router-dom";
 import Llave_izquierda from '../../Images/Key_left.svg'
 import Llave_derecha from '../../Images/Key_rigth.svg'
 
@@ -45,11 +46,11 @@ function Main() {
                     </div>
                 </div>
                 <div className="name-box_C">
-                    <div className="area-2"><div>More about me</div> </div>
-                    <div className="area-3">Projects </div>
-                    <div className="area-4">Tech stack and education</div>
-                    <div className="area-5">Experience </div>
-                    <div className="spacer"></div>
+                    <Link to={'/aboutMe'} className="area-2"> More about me</Link>
+                    <Link to={'/aboutMe'} className="area-3">Projects </Link>
+                    <Link to={'/aboutMe'} className="area-4">Tech stack and education</Link>
+                    <Link to={'/aboutMe'} className="area-5">Experience </Link>
+                    <Link to={'/aboutMe'} className="spacer"></Link>
                 </div>
             </div>  
             

@@ -138,7 +138,7 @@ hr{
     height: 50%;
     margin: auto;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
 }
 
@@ -147,13 +147,14 @@ hr{
     height: 70%;
     text-align: center;
     color: rgb(78, 78, 78);
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     border-left: 2px solid #F9B233;
     border-right: 2px solid #F9B233;
     display: flex;
     align-items:  center;
     justify-content: center;
 }
+
 
 .name-box_C{
     border-top: 2px solid #F9B233;
@@ -173,6 +174,8 @@ hr{
     align-items: center;
     justify-content: center;
     flex: 25%;
+    text-decoration: none;
+
 }
 
 .area-3{
@@ -184,6 +187,7 @@ hr{
     align-items: center;
     justify-content: center;
     flex: 15%;
+    text-decoration: none;
 }
 
 .area-4{
@@ -195,6 +199,8 @@ hr{
     align-items: center;
     justify-content: center;
     flex: 40%;
+    text-decoration: none;
+
 }
 
 .area-5{
@@ -207,6 +213,8 @@ hr{
     align-items: center;
     justify-content: center;
     flex: 20%;
+    text-decoration: none;
+
 }
 
 
