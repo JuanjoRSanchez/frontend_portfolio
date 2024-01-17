@@ -1,13 +1,13 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React from 'react';
 import Main from './Components/Main/Main.jsx';
 import Header from './Components/Header/Header.jsx'
 import Contact from './Components/Contact/Contact.jsx';
 import AboutMe from './Components/AboutMe/AboutMe.jsx';
 import Projects from './Components/Projects/Projects.jsx';
-import TechStack from './Components/TechStack/TechStack.jsx'
-import Experience from './Components/Experience/Experience.jsx'
+import TechStack from './Components/TechStack/TechStack.jsx';
+import Experience from './Components/Experience/Experience.jsx';
 
 function App() {
   return (

@@ -1,13 +1,110 @@
 .main-box-about{
-    width: 80%;
-    height: auto;
-    background-color: rgb(224, 135, 25);
+    width: 90%;
+    min-width: 350px;
+    height: 85vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
 
+.box-about{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.box-about-left{
+    min-width: 350px;
+    height: 100%;
+    flex: 40%;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.left-text{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.box-about-right{
+    min-width: 350px;
+    height: 100%;
+    flex: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.right-text{
+    flex: 93%;
+    font-size: 1.5rem;
+    color: rgb(78, 78, 78);
+    margin: auto;
+    padding: 15px;
 }
 
 
+.key-about{
+    flex: 1%;
+    width: 4vh;
+}
+/*
+@media screen and (max-width: 1006px){
+    .key-about{
+        flex: 1%;
+        width: 3.5%;
+    }
+}
 
-/*  
-    border-left: 2px solid #F9B233;
-    border-left: 2px solid #F9B233;
+@media screen and (max-width: 840px){
+    .key-about{
+        flex: 1%;
+        width: 4.5%;
+    }
+}
 */
+@media screen and (max-width: 750px){
+
+    .box-about-right{
+        min-width: 350px;
+        height: 100%;
+        flex: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: auto;
+        margin-bottom: auto;
+        background-color: aquamarine;
+    }
+
+    .right-text{
+        font-size: 1.3rem;
+        color: rgb(78, 78, 78);
+        margin: auto;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 550px){
+
+    .right-text{
+        font-size: 1.1rem;
+
+    }
+
+    .key-about{
+        flex: 1%;
+        width: 5vh;
+    }
+}
