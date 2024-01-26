@@ -30,7 +30,7 @@ function Main() {
                         </div>
                     </div> 
                 </div>
-                <hr/>
+                <hr className="main-hr"/>
                 <div className="box-right">
                     <img className="key" src={Llave_izquierda} alt="Llave"/>
                     <div className="name-box_A">
@@ -49,8 +49,7 @@ function Main() {
                     <Link to={'/aboutMe'} className="area-2"> More about me</Link>
                     <Link to={'/projects'} className="area-3">Projects </Link>
                     <Link to={'/techstackEducation'} className="area-4">Tech stack and education</Link>
-                    <Link to={'/experience'} className="area-5">Experience </Link>
-                    <div className="spacer"></div>
+                    <Link to={'/experience'} className="area-5">Experience </Link>     
                 </div>
             </div>  
             

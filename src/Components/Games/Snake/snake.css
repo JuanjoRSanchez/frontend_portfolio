@@ -1,0 +1,277 @@
+.box-game {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.tit {
+    width: 100%;
+    color: rgb(104, 104, 104);;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#snake-box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+
+#tablero {
+    display: grid;
+    margin-top: 5%;
+
+}
+
+.tablero-box {
+    display: block;
+}
+
+#tablero-snake {
+    display: grid;
+}
+
+
+
+.cuadro {
+    width: 15px;
+    height: 15px;
+    background-color: grey;
+}
+
+.serpiente {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(112, 17, 17);
+}
+
+.puntoObjetivo {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(42, 47, 128);
+}
+
+#mandos {
+    width: 350px;
+    color: white;
+    text-align: center;
+
+}
+
+#cajaCuadro {
+    display: none;
+    width: 250px;
+    height: 150px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    grid-template-columns: 108px 108px 108px;
+    padding-top: 40px;
+}
+
+#derecha {
+    width: 70px;
+    margin-top: 55%;
+}
+
+#izquierda {
+    margin-top: 55%;
+}
+
+#arriba {
+    width: 70px;
+    margin-top: 5px;
+    margin-bottom: 85%;
+}
+
+#abajo {
+    width: 70px;
+    margin-top: 0;
+}
+
+.columna {
+    width: 100px;
+    height: 100%;
+}
+
+/*Clases de color de los cuadros*/
+.blanco {
+    background-color: white;
+}
+
+.azul {
+    background-color: blue;
+
+}
+
+.gris {
+    background-color: gray;
+}
+
+/*Mensaje de alerta*/
+#ca {
+    width: 50%;
+    min-width: 300px;
+    height: 200px;
+    border: 1px solid red;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(0, 0, 0);
+}
+
+#mensaje01 {
+    position: absolute;
+    display: none;
+    width: 90%;
+    min-width: 300px;
+    height: 200px;
+    top: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#mensaje_snake {
+    position: relative;
+    background-color: black;
+    color: white;
+    display: none;
+    top: 50px;
+    margin: auto;
+    font-size: 1.5em;
+    text-align: center;
+    width: 80%;
+    display: flex;
+
+}
+
+
+
+
+
+
+/* Botones */
+.btn-control {
+    padding: 10px;
+}
+
+#btnMostrar {
+    padding: 5px 10px 5px 10px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: rgb(124, 189, 167);
+    color: rgb(0, 0, 0);
+
+}
+
+#btnMostrar:hover {
+    color: aliceblue;
+    background-color: rgb(19, 75, 56);
+
+}
+
+.btnFinal {
+    all: unset;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(77, 100, 100);
+    border-radius: 10px;
+    border: 1px solid rgb(163, 160, 165);
+    color: white;
+    text-decoration: none;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btnFinal:hover {
+    animation: btnPartida;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes btnPartida {
+    0% {}
+
+    100% {
+        background-color: rgb(124, 189, 167);
+        color: black;
+    }
+}
+
+.btns-control {
+    width: 20%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid rgb(32, 192, 85);
+
+}
+
+.btns-inicio {
+    width: 100%;
+    text-align: center;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.btn-partida {
+    padding: 25px;
+    background-color: rgb(33, 122, 37);
+    border-radius: 10px;
+    color: white;
+}
+
+.btn-partida:hover {
+    background-color: rgb(34, 70, 70);
+}
+
+
+.tablero-snake {
+    display: grid;
+    width: auto;
+    grid-template-columns: 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px;
+}
+
+@media (min-width: 1000px) {
+
+
+    .cuadro {
+        width: 25px;
+        height: 25px;
+        background-color: grey;
+    }
+    
+    .serpiente {
+        width: 25px;
+        height: 25px;
+        background-color: rgb(112, 17, 17);
+    }
+    
+    .puntoObjetivo {
+        width: 25px;
+        height: 25px;
+        background-color: rgb(42, 47, 128);
+    }
+
+    .tablero-snake {
+        display: grid;
+        width: auto;
+        grid-template-columns: 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px;
+    }
+}

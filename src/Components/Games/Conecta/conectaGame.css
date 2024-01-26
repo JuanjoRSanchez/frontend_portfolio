@@ -1,0 +1,321 @@
+.body-conectaJuego {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0%;
+    width: auto;
+    padding-bottom: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.tablero_conectaBox {
+    position: relative;
+    margin-bottom: 5%;
+}
+
+#tablero-conecta {
+    background-color: rgb(0, 68, 156);
+    border-radius: 20px;
+    width: 450px;
+    height: 450px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.casilla {
+    border: 1px solid red;
+    width: 60px;
+    height: 60px;
+    border-radius: 37px;
+    background-color: white;
+    overflow: inherit;
+}
+
+/* Pulsadores */
+#pulsadores {
+    width: 450px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(100, 51, 51);
+    border-radius: 20px;
+
+}
+
+.pulsador {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.casillaPulsador {
+    border-radius: 100px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+
+
+.casillaPulsador:hover {
+    background-color: rgb(46, 109, 49);
+}
+
+@media (max-width: 500px) {
+    #pulsadores {
+        width: 350px;
+        height: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: rgb(100, 51, 51);
+        border-radius: 20px;
+
+    }
+
+    .casillaPulsador {
+        border-radius: 100px;
+        width: 40px;
+        height: 40px;
+        background-color: rgb(255, 255, 255);
+
+    }
+
+    #tablero-conecta {
+        background-color: rgb(0, 68, 156);
+        border-radius: 20px;
+        width: 350px;
+        height: 450px;
+        margin: auto;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .casilla {
+        border: 1px solid red;
+        width: 45px;
+        height: 45px;
+        border-radius: 37px;
+        background-color: white;
+        overflow: inherit;
+    }
+
+}
+
+#columna1,
+#columna2,
+#columna3,
+#columna4,
+#columna5,
+#columna6,
+#columna7 {
+    color: white;
+    margin-top: 10%;
+    font-size: 5em;
+}
+
+#btn {
+    width: 150px;
+    height: 50px;
+    background-color: blueviolet;
+    text-align: center;
+}
+
+
+/* Turno de usuairo*/
+#cajaUsuario {
+    width: 100%;
+    top: 40%;
+    font-weight: bolder;
+    font-size: 1.5em;
+
+}
+
+#cajaUsuario>p {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+#jugadorNum {
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 40%;
+    height: 50px;
+}
+
+/* Mensaje del jugador que gana  */
+
+
+/* Botones */
+.botonera-conecta {
+    flex: 60%;
+    min-width: 300px;
+    /*border: 1px solid blue;*/
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.btnPartida {
+    width: 250px;
+    right: 5%;
+    top: 20%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background-color: rgb(77, 100, 100);
+    border-radius: 10px;
+    border: 2px solid rgb(163, 160, 165);
+    color: white;
+}
+
+.btnPartida:hover {
+    animation: btnPartida;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: alternate-reverse
+}
+
+@keyframes btnPartida {
+    0% {}
+
+    100% {
+        background-color: rgb(124, 189, 167);
+        color: black;
+    }
+}
+
+.btnPartidada {
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(77, 100, 100);
+    border-radius: 10px;
+    border: 2px solid rgb(163, 160, 165);
+    color: white;
+}
+
+.btnPartidada:hover {
+    animation: btnPartidada;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: alternate-reverse
+}
+
+@keyframes btnPartidada {
+    0% {}
+
+    100% {
+        background-color: rgb(124, 189, 167);
+        color: black;
+    }
+}
+
+.btnFin {
+    position: relative;
+    top: 20%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: aqua;
+    border-radius: 10px;
+    border: 2px solid blueviolet;
+}
+
+/**/
+#caja {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    margin: auto;
+}
+
+#redonda {
+    border-radius: 40px;
+    width: 80px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: aliceblue;
+}
+
+#redondaBack {
+    background-color: rgb(250, 79, 0);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70%;
+    border-radius: 40px;
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+}
+
+.white {
+    background-color: white;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+
+.mensajeGanador{
+    position: absolute;
+    display: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: auto;
+    border: 1px solid rgb(124, 124, 124);
+    background-color: rgb(25, 134, 80);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px;
+}
+
+
+.contenedor {
+    width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

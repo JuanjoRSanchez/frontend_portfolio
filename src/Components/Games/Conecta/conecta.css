@@ -1,0 +1,46 @@
+.main-box-connecta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.usuario {
+    position: relative;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 200px;
+    color: rgb(104, 104, 104);
+    /* background-color: antiquewhite; */
+}
+
+.cl {
+    width: 80%;
+    display: flex;
+    align-items: normal;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+label {
+    flex: 80%;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+input {
+    flex: 80%;
+    height: 25px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
