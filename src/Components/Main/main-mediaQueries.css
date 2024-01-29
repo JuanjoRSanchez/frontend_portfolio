@@ -1,6 +1,10 @@
 
 @media screen and (max-width: 1170px){
-
+    .box-home{
+       
+        width: 100%;
+        height: auto;
+    }
     .box-left{
         width: 80%;
         min-width: 350px;
@@ -39,7 +43,7 @@
 
     .bar-link{
 
-        padding-bottom: 100px;
+        margin-bottom: 100px;
     }
 
     .area-1{

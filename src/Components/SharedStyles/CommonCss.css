@@ -22,7 +22,11 @@
     font-size: 2rem;
 }
 
-
+.box-introduction{
+    width: 70%;
+    text-align: center;
+    color: rgb(104, 104, 104);
+}
 
 
 .left{
@@ -36,7 +40,7 @@
 
 .game-instructions {
     width: 90%;
-    color: rgb(104, 104, 104);;
+    color: rgb(104, 104, 104);
     text-align: center;
     font-size: 1.5em;
 

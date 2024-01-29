@@ -13,7 +13,6 @@ function AboutMe(){
                         <p className="left-text">Some about me</p>
                     </div>
                 </div>
-                <hr/>
                 <div className="box-about-right">
                     <img className="key-about" src={Llave_izquierda} alt="Llave"/>
                     <div className="right-text">

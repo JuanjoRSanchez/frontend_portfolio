@@ -51,3 +51,50 @@
     border: 2px solid rgb(253, 253, 253);
 
 }
+
+
+@media screen and (max-width: 700px){
+    .header-right{
+        flex: 50%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .contact-box{
+        width: auto;
+        height: 50%;
+        margin-right: 20px;
+        color: rgb(104, 179, 245);
+        border: 1px solid rgb(104, 179, 245);
+        border-radius: 20px;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: 95%;
+        text-decoration: none;
+    }
+}
+
+
+@media screen and (max-width: 400px){
+
+    .contact-box{
+        width: auto;
+        height: 40%;
+        margin-right: 20px;
+        color: rgb(104, 179, 245);
+        border: 1px solid rgb(104, 179, 245);
+        border-radius: 20px;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: 95%;
+        text-decoration: none;
+    }
+}

@@ -48,8 +48,8 @@ function Main() {
                 <div className="name-box_C">
                     <Link to={'/aboutMe'} className="area-2"> More about me</Link>
                     <Link to={'/projects'} className="area-3">Projects </Link>
-                    <Link to={'/techstackEducation'} className="area-4">Tech stack and education</Link>
-                    <Link to={'/experience'} className="area-5">Experience </Link>     
+                    <Link to={'/techstack'} className="area-4">Tech stack </Link>
+                    <Link to={'/curriculum'} className="area-5">Curriculum </Link>     
                 </div>
             </div>  
             
