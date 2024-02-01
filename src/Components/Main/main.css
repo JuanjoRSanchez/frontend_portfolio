@@ -103,6 +103,11 @@
     margin-bottom: auto;
 }
 
+.spacer-key{
+    flex: 20%;
+    height: 100%;
+}
+
 .key {
     width: 5%;
 }
@@ -189,7 +194,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 15%;
+    flex: 25%;
     text-decoration: none;
 }
 
@@ -201,7 +206,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 40%;
+    flex: 25%;
     text-decoration: none;
 
 }
@@ -215,7 +220,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 20%;
+    flex: 25%;
     text-decoration: none;
 
 }

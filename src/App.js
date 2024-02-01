@@ -7,7 +7,7 @@ import Contact from './Components/Contact/Contact.jsx';
 import AboutMe from './Components/AboutMe/AboutMe.jsx';
 import Projects from './Components/Projects/Projects.jsx';
 import TechStack from './Components/TechStack/TechStack.jsx';
-import Curriculum from './Components/Experience/Curriculum.jsx';
+import Curriculum from './Components/Curriculum/Curriculum.jsx';
 import Pacman from './Components/Games/Pacman/Pacman.jsx'
 import Snake from './Components/Games/Snake/Snake.jsx'
 import Conecta from './Components/Games/Conecta/Conecta.jsx'

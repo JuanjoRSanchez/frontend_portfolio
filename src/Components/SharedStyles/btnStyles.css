@@ -1,4 +1,6 @@
 .btn{
+    background-color: transparent;
+    border: none;
     width: 90%;
     height: 50px;
     border: 1px solid rgb(104, 104, 104);
@@ -10,6 +12,7 @@
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 .btn:hover{
@@ -32,3 +35,30 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.btn-download{
+    background-color: transparent;
+    border: none;
+    width: auto;
+    height: 50px;
+    border: 1px solid rgb(104, 104, 104);
+    text-decoration: none;
+    color: rgb(99, 99, 99);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.btn-download:hover{
+    background-color: rgb(44, 144, 151);
+    border: 1px solid rgb(167, 194, 196);
+    color: rgb(167, 194, 196);
+
+}
+
+
+

@@ -1,5 +1,3 @@
-// import { Link } from 'react-router-dom';
-// import './projects.css'
 import './project.css'
 
 import '../SharedStyles/btnStyles.css'

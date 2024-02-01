@@ -1,0 +1,149 @@
+.box-componenTech{
+    width: 75%;
+    height: 180px;
+    margin-top: 20px;
+    color: rgb(104, 104, 104);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(104, 104, 104);
+
+    
+
+    /* box-shadow: 10px 10px 15px 0 rgba(31, 30, 30, 0.3);
+    border-bottom: 1px solid rgb(104, 104, 104);
+    border-top: 1px solid rgb(104, 104, 104);
+    */
+}
+
+
+.box-componenTech-text-one{
+    flex: 69%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+
+.box-componenTech-text-two{
+    flex: 30%;
+    min-width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-left: 1px solid rgb(104, 104, 104);
+
+}
+
+.we{
+    flex: 100%;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.we-title{
+    flex: 100%;
+    height: 30%;
+    text-align: center;
+    color: #0d8029;
+    font-size: 1.5rem;
+    padding-right: 10px;
+
+}
+
+.box-componenTech-img{
+    flex: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-left: 1px solid rgb(104, 104, 104);
+}
+
+.technology-title{
+    width: 90%;
+    height: auto;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(104, 104, 104);
+    border-bottom: 1px solid rgb(104, 104, 104);
+
+}
+
+
+
+.box-img{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.img-componenTech{
+    width: 40%;
+    max-width: 110px;
+    min-width: 100px;
+}
+
+.hr-curriculum{
+    width: 90%;
+    background-color: #F9B233;
+    border-width: 0.2px;
+    border-color: #F9B233;
+    background-color: #F9B233;
+}
+
+@media screen and (max-width: 1170px){
+
+    .box-componenTech{
+        width: 75%;
+        height: auto;
+        flex-wrap: wrap;
+
+    }
+    .box-componenTech-text-two{
+        flex: 100%;
+        height: 50%;    
+        border-top: 1px solid rgb(104, 104, 104);
+
+    }
+    .box-componenTech-img{
+        flex: 100%;
+        height: 50%;
+        border-left: none;
+
+    }
+}
+
+
+@media screen and (max-width: 450px){
+
+    .we{
+        flex: 100%;
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    .we-title{
+        flex: 100%;
+        text-align: center;
+        color: #0d8029;
+        font-size: 1.2rem;
+    }
+
+
+
+    
+
+}

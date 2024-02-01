@@ -1,3 +1,12 @@
+@media screen and (max-width: 1400px){
+    .name-box_A> p{
+        width: 80%;
+        color: rgb(78, 78, 78);
+        font-size: 1.3rem;
+        display: flex;
+    }
+}
+
 
 @media screen and (max-width: 1170px){
     .box-home{

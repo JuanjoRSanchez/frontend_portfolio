@@ -32,11 +32,17 @@ function Main() {
                 </div>
                 <hr className="main-hr"/>
                 <div className="box-right">
+                    <div className="spacer-key">
+                    </div>
                     <img className="key" src={Llave_izquierda} alt="Llave"/>
                     <div className="name-box_A">
                         <p>Nowadays I’m looking for a job and I’m open to offers. If you are interested please contact me.</p>
                     </div>
+       
                     <img className="key" src={Llave_derecha} alt="Llave"/>
+                    <div className="spacer-key">
+                    </div>
+                    
                 </div> 
             </div>
             <div className="bar-link">
