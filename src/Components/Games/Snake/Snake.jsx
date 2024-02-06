@@ -286,6 +286,9 @@ export default function Snake() {
                 <p>
                     To move you should use the next keys, key 1: left, key 3: right, key 5: up, key 2: down.
                 </p>
+                <p>
+                    Be careful, you can't get out of the board.
+                </p>
             </div>
             <div id="snake-box">
                 <Box />

@@ -333,431 +333,428 @@ export default function Board() {
     
     /*
         Fantasmas
-        */
+    */
 
-        function evaluarMovimientoFantasma(posi) {
-            if (recorridoValido.includes(posi)) {
-                return true;
-            }
-            return false
-        }
-
-        function evaluarChoqueFantasmaConPacman(posi) {
-            try {
-                let clas = document.getElementById(posi).getAttribute('class');
-                if (clas !== 'comecocosDerecha' && clas !== 'comecocosIzquierda' && clas !== 'comecocosArriba' &&
-                    clas !== 'comecocosAbajo' && clas !== 'comecocosCerrado') {
-                    return false;
-                }
-            } catch (error) {
-
-            }
-
+    function evaluarMovimientoFantasma(posi) {
+        if (recorridoValido.includes(posi)) {
             return true;
         }
+        return false
+    }
 
-        function randomDireccionesTotal(posic) {
-            if (nodoDIAA.includes(posic)) {
-                let num01 = Math.round(Math.random() * 3) + 1;
-                switch (num01) {
-                    case (1):
-                        return 'derecha';
-                    case (2):
-                        return 'izquierda';
-                    case (3):
-                        return 'abajo';
-                    case (4):
-                        return 'arriba';
-                    default:
-                        break;
-                }
+    function evaluarChoqueFantasmaConPacman(posi) {
+        try {
+            let clas = document.getElementById(posi).getAttribute('class');
+            if (clas !== 'comecocosDerecha' && clas !== 'comecocosIzquierda' && clas !== 'comecocosArriba' &&
+                clas !== 'comecocosAbajo' && clas !== 'comecocosCerrado') {
+                return false;
             }
-            if (nodoDAb.includes(posic)) {
-                let num01 = Math.round(Math.random() * 10) % 2;
-                if (num01 === 0) {
-                    return 'derecha';
-                } else {
-                    return 'abajo';
-                }
-            }
-            if (nodoDAr.includes(posic)) {
-                let num01 = Math.round(Math.random() * 10) % 2;
-                if (num01 === 0) {
-                    return 'derecha';
-                } else {
-                    return 'arriba';
-                }
-            }
-            if (nodoIAb.includes(posic)) {
-                let num01 = Math.round(Math.random() * 10) % 2;
-                if (num01 === 0) {
-                    return 'izquierda';
-                } else {
-                    return 'abajo';
-                }
-            }
-            if (nodoIAr.includes(posic)) {
-                let num01 = Math.round(Math.random() * 10) % 2;
-                if (num01 === 0) {
-                    return 'izquierda';
-                } else {
-                    return 'arriba';
-                }
-            }
-            if (nodoDIAb.includes(posic)) {
-                let num01 = Math.round(Math.random() * 2) + 1;
-                switch (num01) {
-                    case (1):
-                        return 'derecha';
-                    case (2):
-                        return 'izquierda';
-                    case (3):
-                        return 'abajo';
-                    default:
-                        break;
-                }
-            }
-            if (nodoDIAr.includes(posic)) {
-                let num01 = Math.round(Math.random() * 2) + 1;
-                switch (num01) {
-                    case (1):
-                        return 'derecha';
-                    case (2):
-                        return 'izquierda';
-                    case (3):
-                        return 'arriba';
-                    default:
-                        break;
-                }
-            }
-            if (nodoAAD.includes(posic)) {
-                let num01 = Math.round(Math.random() * 2) + 1;
-                switch (num01) {
-                    case (1):
-                        return 'derecha';
-                    case (2):
-                        return 'abajo';
-                    case (3):
-                        return 'arriba';
-                    default:
-                        break;
-                }
-            }
-            if (nodoAAI.includes(posic)) {
-                let num01 = Math.round(Math.random() * 2) + 1;
-                switch (num01) {
-                    case (1):
-                        return 'izquierda';
-                    case (2):
-                        return 'abajo';
-                    case (3):
-                        return 'arriba';
-                    default:
-                        break;
-                }
-                //  }
-            }
-            if (posic === der) {
-                return 'derecha';
-            }
-            if (posic === izq) {
-                return 'izquierda';
-            }
-            return false;
+        } catch (error) {
+
         }
 
-        function movimiento(caminos, caminoEvaluar, pos, color) {
+        return true;
+    }
 
-            if (evaluarMovimientoFantasma(caminoEvaluar)) {
-                let clase;
-                switch (color) {
-                    case 'rosa':
-                        fantasmaRosa.posicion = caminoEvaluar;
-                        clase = 'fantasmaRosa01';
-                        break;
-                    case 'rojo':
-                        fantasmaRojo.posicion = caminoEvaluar;
-                        clase = 'fantasmaRojo01';
-                        break;
-                    case 'azul':
-                        fantasmaAzul.posicion = caminoEvaluar;
-                        clase = 'fantasmaAzul01';
-                        break;
-                    case 'naranja':
-                        fantasmaNaranja.posicion = caminoEvaluar;
-                        clase = 'fantasmaNaranja01';
-                        break;
-                    default:
-                        break;
+    function randomDireccionesTotal(posic) {
+        if (nodoDIAA.includes(posic)) {
+            let num01 = Math.round(Math.random() * 3) + 1;
+            switch (num01) {
+                case (1):
+                    return 'derecha';
+                case (2):
+                    return 'izquierda';
+                case (3):
+                    return 'abajo';
+                case (4):
+                    return 'arriba';
+                default:
+                    break;
+            }
+        }
+        if (nodoDAb.includes(posic)) {
+            let num01 = Math.round(Math.random() * 10) % 2;
+            if (num01 === 0) {
+                return 'derecha';
+            } else {
+                return 'abajo';
+            }
+        }
+        if (nodoDAr.includes(posic)) {
+            let num01 = Math.round(Math.random() * 10) % 2;
+            if (num01 === 0) {
+                return 'derecha';
+            } else {
+                return 'arriba';
+            }
+        }
+        if (nodoIAb.includes(posic)) {
+            let num01 = Math.round(Math.random() * 10) % 2;
+            if (num01 === 0) {
+                return 'izquierda';
+            } else {
+                return 'abajo';
+            }
+        }
+        if (nodoIAr.includes(posic)) {
+            let num01 = Math.round(Math.random() * 10) % 2;
+            if (num01 === 0) {
+                return 'izquierda';
+            } else {
+                return 'arriba';
+            }
+        }
+        if (nodoDIAb.includes(posic)) {
+            let num01 = Math.round(Math.random() * 2) + 1;
+            switch (num01) {
+                case (1):
+                    return 'derecha';
+                case (2):
+                    return 'izquierda';
+                case (3):
+                    return 'abajo';
+                default:
+                    break;
+            }
+        }
+        if (nodoDIAr.includes(posic)) {
+            let num01 = Math.round(Math.random() * 2) + 1;
+            switch (num01) {
+                case (1):
+                    return 'derecha';
+                case (2):
+                    return 'izquierda';
+                case (3):
+                    return 'arriba';
+                default:
+                    break;
+            }
+        }
+        if (nodoAAD.includes(posic)) {
+            let num01 = Math.round(Math.random() * 2) + 1;
+            switch (num01) {
+                case (1):
+                    return 'derecha';
+                case (2):
+                    return 'abajo';
+                case (3):
+                    return 'arriba';
+                default:
+                    break;
+            }
+        }
+        if (nodoAAI.includes(posic)) {
+            let num01 = Math.round(Math.random() * 2) + 1;
+            switch (num01) {
+                case (1):
+                    return 'izquierda';
+                case (2):
+                    return 'abajo';
+                case (3):
+                    return 'arriba';
+                default:
+                    break;
+            }
+            //  }
+        }
+        if (posic === der) {
+            return 'derecha';
+        }
+        if (posic === izq) {
+            return 'izquierda';
+        }
+        return false;
+    }
+
+    function movimiento(caminos, caminoEvaluar, pos, color) {
+
+        if (evaluarMovimientoFantasma(caminoEvaluar)) {
+            let clase;
+            switch (color) {
+                case 'rosa':
+                    fantasmaRosa.posicion = caminoEvaluar;
+                    clase = 'fantasmaRosa01';
+                    break;
+                case 'rojo':
+                    fantasmaRojo.posicion = caminoEvaluar;
+                    clase = 'fantasmaRojo01';
+                    break;
+                case 'azul':
+                    fantasmaAzul.posicion = caminoEvaluar;
+                    clase = 'fantasmaAzul01';
+                    break;
+                case 'naranja':
+                    fantasmaNaranja.posicion = caminoEvaluar;
+                    clase = 'fantasmaNaranja01';
+                    break;
+                default:
+                    break;
 
 
-                }
-                try {
-                    let classmovimiento = document.getElementById(caminoEvaluar).getAttribute('class');
+            }
+            try {
+                let classmovimiento = document.getElementById(caminoEvaluar).getAttribute('class');
 
-                    if (classmovimiento === 'comecocos'
-                        || classmovimiento === 'comecocosCerrado' || classmovimiento === 'comecocosDerecha' || classmovimiento === 'comecocosIzquierda'
-                        || classmovimiento === 'comecocosArriba' || classmovimiento === 'comecocosAbajo' ) {
-                        if (evaluarChoqueFantasmaConPacman(caminoEvaluar)) {
-                            mostrarMensaje(mensajeFantasma, false);
-                        }
-                    }
-                } catch (error) {
-                }
-                if (caminos.includes(pos)) {
-                    try {
-                        document.getElementById(pos).setAttribute('class', 'punto');
-                    } catch (error) {
-
-                    }
-                } else {
-                    document.getElementById(pos).setAttribute('class', 'noPunto');
-                }
-                try {
-                    document.getElementById(caminoEvaluar).classList.add(clase);
-                } catch (error) {
-
-                }
-                if (!randomDireccionesTotal(caminoEvaluar)) {
-                    return false;
-                } else {
-
+                if (classmovimiento === 'comecocos'
+                    || classmovimiento === 'comecocosCerrado' || classmovimiento === 'comecocosDerecha' || classmovimiento === 'comecocosIzquierda'
+                    || classmovimiento === 'comecocosArriba' || classmovimiento === 'comecocosAbajo' ) {
                     if (evaluarChoqueFantasmaConPacman(caminoEvaluar)) {
                         mostrarMensaje(mensajeFantasma, false);
                     }
-                    switch (color) {
-                        case 'rosa':
-                            fantasmaRosa.direccion = randomDireccionesTotal(caminoEvaluar);
-                            break;
-                        case 'rojo':
-                            fantasmaRojo.direccion = randomDireccionesTotal(caminoEvaluar);
-                            break;
-                        case 'azul':
-                            fantasmaAzul.direccion = randomDireccionesTotal(caminoEvaluar);
-                            break;
-                        case 'naranja':
-                            fantasmaNaranja.direccion = randomDireccionesTotal(caminoEvaluar);
-                            break;
-                        default:
-                            break;
-                    }
+                }
+            } catch (error) {
+            }
+            if (caminos.includes(pos)) {
+                try {
+                    document.getElementById(pos).setAttribute('class', 'punto');
+                } catch (error) {
+
+                }
+            } else {
+                document.getElementById(pos).setAttribute('class', 'noPunto');
+            }
+            try {
+                document.getElementById(caminoEvaluar).classList.add(clase);
+            } catch (error) {
+
+            }
+            if (!randomDireccionesTotal(caminoEvaluar)) {
+                return false;
+            } else {
+
+                if (evaluarChoqueFantasmaConPacman(caminoEvaluar)) {
+                    mostrarMensaje(mensajeFantasma, false);
+                }
+                switch (color) {
+                    case 'rosa':
+                        fantasmaRosa.direccion = randomDireccionesTotal(caminoEvaluar);
+                        break;
+                    case 'rojo':
+                        fantasmaRojo.direccion = randomDireccionesTotal(caminoEvaluar);
+                        break;
+                    case 'azul':
+                        fantasmaAzul.direccion = randomDireccionesTotal(caminoEvaluar);
+                        break;
+                    case 'naranja':
+                        fantasmaNaranja.direccion = randomDireccionesTotal(caminoEvaluar);
+                        break;
+                    default:
+                        break;
                 }
             }
         }
+    }
 
-        function movimientoFantasmaRosaTotal(caminos) {
-            let pos = fantasmaRosa.posicion;
-            let DX = parseInt(pos.split(':')[1]);
-            let DY = parseInt(pos.split(':')[0]);
-            let caminoEvaluarRosa;
-            let color = 'rosa';
-            switch (fantasmaRosa.direccion) {
-                case 'derecha':
-                    DX = DX + 1;
-                    caminoEvaluarRosa = DY + ':' + DX;
-                    if (!movimiento(caminos, caminoEvaluarRosa, pos, color)) {
-                        break;
-                    }
+    function movimientoFantasmaRosaTotal(caminos) {
+        let pos = fantasmaRosa.posicion;
+        let DX = parseInt(pos.split(':')[1]);
+        let DY = parseInt(pos.split(':')[0]);
+        let caminoEvaluarRosa;
+        let color = 'rosa';
+        switch (fantasmaRosa.direccion) {
+            case 'derecha':
+                DX = DX + 1;
+                caminoEvaluarRosa = DY + ':' + DX;
+                if (!movimiento(caminos, caminoEvaluarRosa, pos, color)) {
                     break;
-                case 'izquierda':
-                    DX = DX - 1;
-                    caminoEvaluarRosa = DY + ':' + (DX);
-                    if (!movimiento(caminos, caminoEvaluarRosa, pos, color)) {
-                        break;
-                    }
+                }
+                break;
+            case 'izquierda':
+                DX = DX - 1;
+                caminoEvaluarRosa = DY + ':' + (DX);
+                if (!movimiento(caminos, caminoEvaluarRosa, pos, color)) {
                     break;
-                case 'arriba':
-                    DY = DY - 1;
-                    caminoEvaluarRosa = DY + ':' + (DX);
-                    if (!movimiento(caminos, caminoEvaluarRosa, pos, color)) {
-                        break;
-                    }
+                }
+                break;
+            case 'arriba':
+                DY = DY - 1;
+                caminoEvaluarRosa = DY + ':' + (DX);
+                if (!movimiento(caminos, caminoEvaluarRosa, pos, color)) {
                     break;
-                case 'abajo':
-                    DY = DY + 1;
-                    caminoEvaluarRosa = DY + ':' + (DX);
-                    if (!movimiento(caminos, caminoEvaluarRosa, pos, color)) {
-                        break;
-                    }
+                }
+                break;
+            case 'abajo':
+                DY = DY + 1;
+                caminoEvaluarRosa = DY + ':' + (DX);
+                if (!movimiento(caminos, caminoEvaluarRosa, pos, color)) {
                     break;
-                default:
+                }
+                break;
+            default:
+                break;
+        }
+    }
+
+    function movimientoFantasmaRojoTotal(caminos) {
+        let pos = fantasmaRojo.posicion;
+        let DX = parseInt(pos.split(':')[1]);
+        let DY = parseInt(pos.split(':')[0]);
+        let caminoEvaluarRojo;
+        let color = 'rojo';
+        switch (fantasmaRojo.direccion) {
+            case 'derecha':
+                DX = DX + 1;
+                caminoEvaluarRojo = DY + ':' + DX;
+                if (!movimiento(caminos, caminoEvaluarRojo, pos, color)) {
                     break;
-            }
+                }
+                break;
+            case 'izquierda':
+                DX = DX - 1;
+                caminoEvaluarRojo = DY + ':' + (DX);
+                if (!movimiento(caminos, caminoEvaluarRojo, pos, color)) {
+                    break;
+                }
+                break;
+            case 'arriba':
+                DY = DY - 1;
+                caminoEvaluarRojo = DY + ':' + (DX);
+                if (!movimiento(caminos, caminoEvaluarRojo, pos, color)) {
+                    break;
+                }
+                break;
+            case 'abajo':
+                DY = DY + 1;
+                caminoEvaluarRojo = DY + ':' + (DX);
+                if (!movimiento(caminos, caminoEvaluarRojo, pos, color)) {
+                    break;
+                }
+                break;
+            default:
+                break;
         }
 
-        function movimientoFantasmaRojoTotal(caminos) {
-            let pos = fantasmaRojo.posicion;
-            let DX = parseInt(pos.split(':')[1]);
-            let DY = parseInt(pos.split(':')[0]);
-            let caminoEvaluarRojo;
-            let color = 'rojo';
-            switch (fantasmaRojo.direccion) {
-                case 'derecha':
-                    DX = DX + 1;
-                    caminoEvaluarRojo = DY + ':' + DX;
-                    if (!movimiento(caminos, caminoEvaluarRojo, pos, color)) {
-                        break;
-                    }
-                    break;
-                case 'izquierda':
-                    DX = DX - 1;
-                    caminoEvaluarRojo = DY + ':' + (DX);
-                    if (!movimiento(caminos, caminoEvaluarRojo, pos, color)) {
-                        break;
-                    }
-                    break;
-                case 'arriba':
-                    DY = DY - 1;
-                    caminoEvaluarRojo = DY + ':' + (DX);
-                    if (!movimiento(caminos, caminoEvaluarRojo, pos, color)) {
-                        break;
-                    }
-                    break;
-                case 'abajo':
-                    DY = DY + 1;
-                    caminoEvaluarRojo = DY + ':' + (DX);
-                    if (!movimiento(caminos, caminoEvaluarRojo, pos, color)) {
-                        break;
-                    }
-                    break;
-                default:
-                    break;
-            }
+    }
 
+    function movimientoFantasmaNaranjaTotal(caminos) {
+        let pos = fantasmaNaranja.posicion;
+        let DX = parseInt(pos.split(':')[1]);
+        let DY = parseInt(pos.split(':')[0]);
+        let caminoEvaluarNaranja;
+        let color = 'naranja';
+        switch (fantasmaNaranja.direccion) {
+            case 'derecha':
+                DX = DX + 1;
+                caminoEvaluarNaranja = DY + ':' + DX;
+                if (!movimiento(caminos, caminoEvaluarNaranja, pos, color)) {
+                    break;
+                }
+                break;
+            case 'izquierda':
+                DX = DX - 1;
+                caminoEvaluarNaranja = DY + ':' + (DX);
+                if (!movimiento(caminos, caminoEvaluarNaranja, pos, color)) {
+                    break;
+                }
+                break;
+            case 'arriba':
+                DY = DY - 1;
+                caminoEvaluarNaranja = DY + ':' + (DX);
+                if (!movimiento(caminos, caminoEvaluarNaranja, pos, color)) {
+                    break;
+                }
+                break;
+            case 'abajo':
+                DY = DY + 1;
+                caminoEvaluarNaranja = DY + ':' + (DX);
+                if (!movimiento(caminos, caminoEvaluarNaranja, pos, color)) {
+                    break;
+                }
+                break;
+            default:
+                break;
         }
+    }
 
-        function movimientoFantasmaNaranjaTotal(caminos) {
-            let pos = fantasmaNaranja.posicion;
-            let DX = parseInt(pos.split(':')[1]);
-            let DY = parseInt(pos.split(':')[0]);
-            let caminoEvaluarNaranja;
-            let color = 'naranja';
-            switch (fantasmaNaranja.direccion) {
-                case 'derecha':
-                    DX = DX + 1;
-                    caminoEvaluarNaranja = DY + ':' + DX;
-                    if (!movimiento(caminos, caminoEvaluarNaranja, pos, color)) {
-                        break;
-                    }
+    function movimientoFantasmaAzulTotal(caminos) {
+        let pos = fantasmaAzul.posicion;
+        let DX = parseInt(pos.split(':')[1]);
+        let DY = parseInt(pos.split(':')[0]);
+        let caminoEvaluarAzul;
+        let color = 'azul';
+        switch (fantasmaAzul.direccion) {
+            case 'derecha':
+                DX = DX + 1;
+                caminoEvaluarAzul = DY + ':' + DX;
+                if (!movimiento(caminos, caminoEvaluarAzul, pos, color)) {
                     break;
-                case 'izquierda':
-                    DX = DX - 1;
-                    caminoEvaluarNaranja = DY + ':' + (DX);
-                    if (!movimiento(caminos, caminoEvaluarNaranja, pos, color)) {
-                        break;
-                    }
+                }
+                break;
+            case 'izquierda':
+                DX = DX - 1;
+                caminoEvaluarAzul = DY + ':' + (DX);
+                if (!movimiento(caminos, caminoEvaluarAzul, pos, color)) {
                     break;
-                case 'arriba':
-                    DY = DY - 1;
-                    caminoEvaluarNaranja = DY + ':' + (DX);
-                    if (!movimiento(caminos, caminoEvaluarNaranja, pos, color)) {
-                        break;
-                    }
+                }
+                break;
+            case 'arriba':
+                DY = DY - 1;
+                caminoEvaluarAzul = DY + ':' + (DX);
+                if (!movimiento(caminos, caminoEvaluarAzul, pos, color)) {
                     break;
-                case 'abajo':
-                    DY = DY + 1;
-                    caminoEvaluarNaranja = DY + ':' + (DX);
-                    if (!movimiento(caminos, caminoEvaluarNaranja, pos, color)) {
-                        break;
-                    }
+                }
+                break;
+            case 'abajo':
+                DY = DY + 1;
+                caminoEvaluarAzul = DY + ':' + (DX);
+                if (!movimiento(caminos, caminoEvaluarAzul, pos, color)) {
                     break;
-                default:
-                    break;
-            }
+                }
+                break;
+            default:
+                break;
         }
+    }
 
-        function movimientoFantasmaAzulTotal(caminos) {
-            let pos = fantasmaAzul.posicion;
-            let DX = parseInt(pos.split(':')[1]);
-            let DY = parseInt(pos.split(':')[0]);
-            let caminoEvaluarAzul;
-            let color = 'azul';
-            switch (fantasmaAzul.direccion) {
-                case 'derecha':
-                    DX = DX + 1;
-                    caminoEvaluarAzul = DY + ':' + DX;
-                    if (!movimiento(caminos, caminoEvaluarAzul, pos, color)) {
-                        break;
-                    }
-                    break;
-                case 'izquierda':
-                    DX = DX - 1;
-                    caminoEvaluarAzul = DY + ':' + (DX);
-                    if (!movimiento(caminos, caminoEvaluarAzul, pos, color)) {
-                        break;
-                    }
-                    break;
-                case 'arriba':
-                    DY = DY - 1;
-                    caminoEvaluarAzul = DY + ':' + (DX);
-                    if (!movimiento(caminos, caminoEvaluarAzul, pos, color)) {
-                        break;
-                    }
-                    break;
-                case 'abajo':
-                    DY = DY + 1;
-                    caminoEvaluarAzul = DY + ':' + (DX);
-                    if (!movimiento(caminos, caminoEvaluarAzul, pos, color)) {
-                        break;
-                    }
-                    break;
-                default:
-                    break;
-            }
-        }
+    //////////////******** Pacman ********/////////////////////
+    /*
+    Función que dependiendo de la dirección que lleve Pacman orienta su cuerpo 
+    */
 
-        ////// manejar botón de reinicio //////////////
-        /*
-        function reiniciarPartida() {
-            window.location.reload();
-        }
-        */
-        //////////////******** Pacman ********/////////////////////
-        /*
-        Función que dependiendo de la dirección que lleve Pacman orienta su cuerpo 
-        */
+    function pacmanAnimation() {
 
-        function pacmanAnimation() {
-
-            var pu = null;
-            try {
-                pu = document.getElementById(comecocos.actualPosition);
-                if (pu.getAttribute('class').includes('comecocosCerrado')) 
-            {
-            switch (comecocos.direccion) {
-                case 'derecha':
-                    pu.classList.replace('comecocosCerrado' ,'comecocosDerecha');
-                    break;
-                case 'izquierda':
-                    pu.classList.replace('comecocosCerrado' ,'comecocosIzquierda');
-                    break;
-                case 'arriba':
-                    pu.classList.replace('comecocosCerrado' ,'comecocosArriba');
-                    break;
-                case 'abajo':
-                    pu.classList.replace('comecocosCerrado' ,'comecocosAbajo');
-                    break;
-                case '':
-                    pu.classList.replace('comecocosCerrado' ,'comecocosAbajo');
-                    break;
-                default:
-                    break;
-            }
+        var pu = null;
+        try {
+            pu = document.getElementById(comecocos.actualPosition);
+            // pu.setAttribute('class', comecocos.direccion);
+        
+            if (pu.getAttribute('class').includes('comecocosCerrado')) {
+                
+                switch (comecocos.direccion) {
+                    case 'derecha':
+                        pu.classList.replace('comecocosCerrado' ,'comecocosDerecha');
+                        break;
+                    case 'izquierda':
+                        pu.classList.replace('comecocosCerrado' ,'comecocosIzquierda');
+                        break;
+                    case 'arriba':
+                        pu.classList.replace('comecocosCerrado' ,'comecocosArriba');
+                        break;
+                    case 'abajo':
+                        pu.classList.replace('comecocosCerrado' ,'comecocosAbajo');
+                        break;
+                    case '':
+                        pu.classList.replace('comecocosCerrado' ,'comecocosAbajo');
+                        break;
+                    default:
+                        break;
+                }
                 
             } 
             else {
-            pu.setAttribute('class', 'comecocosCerrado');
-            }
-            } catch (error) {
-                console.error(error);
+                pu.setAttribute('class', 'comecocosCerrado');
             }
 
-            
+        } catch (error) {
+            console.error(error);
         }
 
-        let nextPositionVirtual = null;
+        
+    }
 
-        function movimientosPacman() {
+    let nextPositionVirtual = null;
+
+    function movimientosPacman() {
 
         let actualPos = comecocos.actualPosition;
         let DX = parseInt(actualPos.split(':')[1]);
@@ -796,89 +793,110 @@ export default function Board() {
 
     }
 
-        function evaluarmovimientoPacman(nextPosition, actualPos, classComecocos, direccion) {
-            try {
-                document.getElementById(comecocos.actualPosition).setAttribute('class', classComecocos);
-            } catch (error) {
-
-            }
-            comecocos.direccion = direccion;
-            if (document.getElementById(nextPosition).getAttribute('class') === 'punto') {
-                comecocos.puntosComidos.push(nextPosition);
-                restantes(nextPosition);
-            }
-            if (evaluarMovimiento(nextPosition)) {
-                document.getElementById(actualPos).setAttribute('class', 'noPunto');
-                comecocos.actualPosition = nextPosition;
-                if (evaluarChoquePacmanConFantasma(comecocos.actualPosition)) {
-                    mostrarMensaje(mensajeComecocos, false);
-                }
-            }
-        }
-
-       
-
-        function restantes(posi) {
-            for (var i = puntos.length - 1; i >= 0; i--) {
-                if (puntos[i] === posi) {
-                    puntos.splice(i, 1);
-                }
-            }
-        }
-        // Evaluar si el mivimiento esta fuera del camino 
-        function evaluarMovimiento(posi) {
-            if (recorridoValido.includes(posi)) {
-                return true;
-            }
-            return false
-        }
-        function evaluarChoquePacmanConFantasma(posi) {
-            let clas = document.getElementById(posi).getAttribute('class');
-            if (clas.includes('fantasma')) {
-                return true;
-            }
-            return false;
-        }
-        function evaluarVictoria() {
-            let puntosRestantes = document.getElementsByClassName('punto').length;
-            if (puntosRestantes === 0) {
-                mostrarMensaje(mensajeVictoria, true);
-            }
-        }
-
-        function mostrarMensaje(string, boolean) {
-            try {
-                var boxMsg = document.getElementById('box-alert');
-                var msg = document.getElementById('content-mesaje');
-                var btn = document.getElementById('btnMesage');
-                if(boolean){
-                boxMsg.classList.replace('box-hide','box-win');
-                msg.innerHTML = string;
-                btn.classList.add('btnWin')
-                }else{
-                boxMsg.classList.replace('box-hide', 'box-alert');
-                msg.innerHTML = string;
-                btn.classList.add('btnCerrar')
-                }
-                
-            } catch (error) {
-
-            }
+    function evaluarmovimientoPacman(nextPosition, actualPos, classComecocos, direccion) {
+        try {
+            document.getElementById(comecocos.actualPosition).setAttribute('class', classComecocos);
+        } catch (error) {
 
         }
-        function movimientoFantasmasYPacman() {
-            movimientoFantasmaRosaTotal(puntos);
-            movimientoFantasmaRojoTotal(puntos);
-            movimientoFantasmaNaranjaTotal(puntos);
-            movimientoFantasmaAzulTotal(puntos);
-            movimientosPacman();
-            pacmanAnimation();
+        comecocos.direccion = direccion;
+        if (document.getElementById(nextPosition).getAttribute('class') === 'punto') {
+            comecocos.puntosComidos.push(nextPosition);
+            restantes(nextPosition);
+        }
+        if (evaluarMovimiento(nextPosition)) {
+            document.getElementById(actualPos).setAttribute('class', 'noPunto');
+            comecocos.actualPosition = nextPosition;
+            if (evaluarChoquePacmanConFantasma(comecocos.actualPosition)) {
+                mostrarMensaje(mensajeComecocos, false);
+            }
+        }
+    }
+
+    /* Posible to improve to function restantes */
+
+    /*
+    New one
+    function restantes(posi) {
+
+        if (puntos.includes(posi)){
+            delete puntos[puntos.indexOf(posi)];
+        }
+
+    }
+    Old one
+    function restantes(posi) {
+        for (var i = puntos.length - 1; i >= 0; i--) {
+            if (puntos[i] === posi) {
+                puntos.splice(i, 1);
+            }
+        }
+    }
+    */
+    function restantes(posi) {
+
+        if (puntos.includes(posi)){
+            delete puntos[puntos.indexOf(posi)];
+        }
+
+    }
     
+    // Evaluar si el mivimiento esta fuera del camino 
+    function evaluarMovimiento(posi) {
+        if (recorridoValido.includes(posi)) {
+            return true;
         }
+        return false
+    }
+    function evaluarChoquePacmanConFantasma(posi) {
+        let clas = document.getElementById(posi).getAttribute('class');
+        if (clas.includes('fantasma')) {
+            return true;
+        }
+        return false;
+    }
+    function evaluarVictoria() {
+        let puntosRestantes = document.getElementsByClassName('punto').length;
+        if (puntosRestantes === 0) {
+            mostrarMensaje(mensajeVictoria, true);
+        }
+    }
+
+    function mostrarMensaje(string, boolean) {
+        try {
+            var boxMsg = document.getElementById('box-alert');
+            var msg = document.getElementById('content-mesaje');
+            var btn = document.getElementById('btnMesage');
+            if(boolean){
+            boxMsg.classList.replace('box-hide','box-win');
+            msg.innerHTML = string;
+            btn.classList.add('btnWin')
+            }else{
+            boxMsg.classList.replace('box-hide', 'box-alert');
+            msg.innerHTML = string;
+            btn.classList.add('btnCerrar')
+            }
+            
+        } catch (error) {
+
+        }
+
+    }
+    function movimientoFantasmasYPacman() {
+        movimientoFantasmaRosaTotal(puntos);
+        movimientoFantasmaRojoTotal(puntos);
+        movimientoFantasmaNaranjaTotal(puntos);
+        movimientoFantasmaAzulTotal(puntos);
+        movimientosPacman();
+        pacmanAnimation();
+
+    }
 
     var play;
+    
     function playGame(){
         play = setInterval(movimientoFantasmasYPacman, velocidad);
+        setInterval(pacmanAnimation, velocidad/2)
     }
 
     useEffect(() => {

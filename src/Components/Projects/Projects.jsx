@@ -70,7 +70,7 @@ function Projects(){
         title : 'Connecta',
         imageProject : ImageConnecta,
         linkCode: conecta4CodeLink,
-        link: '/conecta',
+        link: '/conecta4',
         text: "I've created the Connecta4 game, wich can by played by two players.",
         textLink: 'Play game',
         techStack: {javascript, react, html}

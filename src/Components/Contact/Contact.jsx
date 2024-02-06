@@ -16,6 +16,7 @@ function Contact(){
         navigator.clipboard.writeText(copyText);
 
     }
+    
     return(
         <div className="main-box-projects">                
             <div className="box-title">

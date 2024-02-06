@@ -679,8 +679,8 @@ export default function Conectagame() {
                 </p>
             </div>
             <div className='botonera-conecta'>
-                <button onClick={nuevaPartida} className="btnPartida">Empezar nueva partida</button>
-                <button onClick={reiniciarPartida} className="btnPartida">Reiniciar la partida</button>
+                <button onClick={nuevaPartida} className="btnPartida">Play</button>
+                <button onClick={reiniciarPartida} className="btnPartida">Restart</button>
             </div>
             <div id="cajaUsuario" className=''>
                 <p>Turn for:  </p>
